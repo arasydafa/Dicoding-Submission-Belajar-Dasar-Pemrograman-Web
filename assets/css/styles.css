@@ -1,0 +1,256 @@
+/* ---------- Default ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 650px;
+    font-size: 30px;
+}
+
+.jumbotron-image {
+    opacity: 0.3;
+    display: flex;
+    width: 100%;
+    height: 630px;
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron-heading {
+    color: #398AB9;
+    font-family: 'Gotham Black', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.jumbotron-body {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    justify-content: space-between;
+    background-color: #1C658C;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    -webkit-border-bottom-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+ul {
+    display: inline-flex;
+    float: right;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    position: relative;
+    margin-right: 50px;
+    margin-top: 9px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #CADEEA;
+}
+
+.nav-logo {
+    margin-left: 10px;
+    display: block;
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ---------- Main ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: scroll;
+    background: #ffffff;
+}
+
+aside {
+    position: relative;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+.flex-center-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center space-between;
+    align-items: center !important;
+}
+
+.section-title {
+    margin-top: 50px;
+    padding-top: 20px;
+    font-family: 'Gotham Black', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.about-image {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-image {
+    flex-shrink: 0;
+    margin-top: 20px;
+    width: 60%;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.self-image {
+    margin-top: 20px;
+    width: 30%;
+    max-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+article.card {
+    background-color: #94BCD4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.62);
+    border-radius: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-text {
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 0px;
+    padding: 5;
+}
+
+.small-text {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 0px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    display: flex;
+    background-color: #1C658C;
+    color: #ffffff;
+    margin-top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .jumbotron-heading {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+    .jumbotron-image {
+        height: 500px;
+    }
+    .jumbotron-body {
+        margin-top: 20px;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section-title,
+    .small-text,
+    .article-text,
+    aside {
+        font-size: 89%;
+    }
+    .jumbotron-heading,
+    .jumbotron-body {
+        font-size: 95%;
+    }
+    .team-image {
+        padding: 5;
+    }
+}
